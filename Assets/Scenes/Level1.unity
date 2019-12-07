@@ -1748,7 +1748,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -0.6000061, y: 0}
+  m_AnchoredPosition: {x: -0.5999756, y: 0}
   m_SizeDelta: {x: 185.94, y: 120}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &407965420
@@ -3407,8 +3407,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.98000336, y: -8.68}
-  m_SizeDelta: {x: 196.25, y: 35.02}
+  m_AnchoredPosition: {x: -0.002494812, y: 0.6499996}
+  m_SizeDelta: {x: 198.21, y: 53.68}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &904397568
 MonoBehaviour:
@@ -3836,8 +3836,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -41.02, y: 17.51}
-  m_SizeDelta: {x: 116.17, y: 17.36}
+  m_AnchoredPosition: {x: -17.22, y: 67.34}
+  m_SizeDelta: {x: -0.3, y: 1.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &938089220
 MonoBehaviour:
@@ -5325,7 +5325,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh14060
+  m_Name: pb_Mesh28748
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6716,7 +6716,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChatBackGround: {fileID: 818442580}
   NPCCharacter: {fileID: 1849476495}
-  Name: Teste
+  Name: aaaa
   sentences:
   - "Ois\t"
   - AGORA VAI
@@ -8757,6 +8757,7 @@ GameObject:
   - component: {fileID: 1989785281}
   - component: {fileID: 1989785280}
   - component: {fileID: 1989785279}
+  - component: {fileID: 1989785283}
   m_Layer: 0
   m_Name: QueensTumb
   m_TagString: Untagged
@@ -8836,6 +8837,38 @@ Transform:
   m_Father: {fileID: 71582380}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1989785283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1989785278}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 818442580}
+  NPCCharacter: {fileID: 1989785282}
+  Name: 
+  sentences:
+  - "Willian: At\xE9 hoje n\xE3o se sabe a hist\xF3ria deste t\xFAmulo"
+  - "WHEATLEY: Quase 5000 anos e nimgu\xE9m aprendeu nada ? Ainda bem que chegamos
+    em!!"
+  - 'AKIRA: Quieto, Wheatley!'
+  - "Willian: O interessante \xE9 que o t\xFAmulo est\xE1 bem no meio entre a face
+    norte e a sul da pir\xE2mide\nUm  dos  nossos  objetivos \xE9 tentar  descobrir
+    \ mais  coisasdaqui!"
+  - "AKIRA: Est\xE1 um cheiro estranho aqui!!"
+  - "ALPHYS: Provavelmente ...\xE9 algum composto qu\xEDmico ... William disse que
+    a medicina deles era desenvolvidas, talvez durante a mumifica\xE7\xE3o eles usassem
+    algo que reagisse como formalde\u0131do para conservar as c\xE9lulas e algo como
+    acetona para desidratar os corpos... alguma mistura com  \xE1gua e sal, provavelmente?"
+  - "AKIRA: Voc\xEA \xE9 a doutora em qu\xEDmica aqui, deve estar certa!"
+  - 'ALPHYS: Talvez . . .  rs . . .  rs . . .  rs ...rs'
+  - William:Exatamente, Al
+  - 'Wheatley : A doutora ataca novamente!'
 --- !u!1 &2027518481
 GameObject:
   m_ObjectHideFlags: 0

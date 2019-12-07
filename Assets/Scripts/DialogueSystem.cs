@@ -119,7 +119,7 @@ public class DialogueSystem: MonoBehaviour {
                 {
                     if (Input.GetKey(DialogueInput))
                     {
-                        yield return new WaitForSeconds(letterDelay * letterMultiplier);
+                        yield return new WaitForSeconds(letterDelay- letterDelay);
 
                         if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
                     }

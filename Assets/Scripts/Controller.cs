@@ -4,9 +4,9 @@ using System.Collections;
 public class Controller : MonoBehaviour {
 	
 	// public variables
-	public float moveSpeed = 3.0f;
+	public float moveSpeed = 5.0f;
 	public float gravity = 9.81f;
-
+	public float moveBase = 5.0f;
 	private CharacterController myController;
 
 	// Use this for initialization
@@ -19,6 +19,13 @@ public class Controller : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		
+		if(Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift)){
+			moveSpeed += 0.5f;
+		}else{
+			moveSpeed = moveBase;
+		}
+
 		// Determine how much should move in the z-direction
 		Vector3 movementZ = Input.GetAxis("Vertical") * Vector3.forward * moveSpeed * Time.deltaTime;
 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0f93eb4a6783eb145aa1678940907fc2
+guid: ba04e08f4b4cef049bbe6d0c28ce9432
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -165,7 +165,7 @@ ModelImporter:
     4300008: Hair
     4300010: Shoes
     4300012: Bottoms
-    7400000: Bashful
+    7400000: mixamo.com
     9500000: //RootNode
     13700000: Body
     13700002: Bottoms
@@ -174,157 +174,7 @@ ModelImporter:
     13700008: Hair
     13700010: Shoes
     13700012: Tops
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bodymat
-    second: {fileID: 2100000, guid: 1598b11536012e248a7eae65f6356478, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Bottommat
-    second: {fileID: 2100000, guid: 612c616cc6f240044958a197b1692bcd, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Hairmat
-    second: {fileID: 2100000, guid: cfef84c03903c634a89f4745f4044669, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Shoesmat
-    second: {fileID: 2100000, guid: 037fa4530402b26428ba7d13a19c08b8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Topmat
-    second: {fileID: 2100000, guid: 20174be18cc919f4ebfc8837af055fa3, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Body_Diffuse
-    second: {fileID: 2800000, guid: 0c2fb88995779b549bd85fc0d0b7b500, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Body_Gloss
-    second: {fileID: 2800000, guid: 471bf87bcdad50047bdb3a69e91a3006, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Body_Normal
-    second: {fileID: 2800000, guid: 979610f71baf43348bf9c408e059395e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Body_Opacity
-    second: {fileID: 2800000, guid: 6cb91e308acefd24dbb27a0b96fe8191, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Body_Specular
-    second: {fileID: 2800000, guid: 66112c2bb942b30428a85c700ca681a5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Bottom_Diffuse
-    second: {fileID: 2800000, guid: c6977320503bb034c88bb0d641232690, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Bottom_Gloss
-    second: {fileID: 2800000, guid: 5a01834b226f6d24ea0d6cbf19170eff, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Bottom_Normal
-    second: {fileID: 2800000, guid: dba357fe8ee2778469c5f3f9e7bb1995, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Bottom_Opacity
-    second: {fileID: 2800000, guid: 08abd566fe00fb64aaeb4f050a82e2f5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Bottom_Specular
-    second: {fileID: 2800000, guid: 23c414b2280b99d4e9eb6fccee2ac54d, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Hair_Diffuse
-    second: {fileID: 2800000, guid: 06b93197ecd9e2946b51d7332026726b, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Hair_Gloss
-    second: {fileID: 2800000, guid: cd8aba297f9e6e3489a294891fc6db45, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Hair_Normal
-    second: {fileID: 2800000, guid: 2596cf2c562cf5041b24792d57edf16c, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Hair_Opacity
-    second: {fileID: 2800000, guid: 9ca1b9231bcb3a94097116b3a2333253, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Hair_Specular
-    second: {fileID: 2800000, guid: 07ad0ce23a06ffd48a8033786bb8dda5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Shoes_Diffuse
-    second: {fileID: 2800000, guid: 5849a366736583a4aa2be6afe9776072, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Shoes_Gloss
-    second: {fileID: 2800000, guid: 304530c5b69c4e7408bce1d89749f9d0, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Shoes_Normal
-    second: {fileID: 2800000, guid: f96a96be870620c43a097a4ddc90c660, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Shoes_Opacity
-    second: {fileID: 2800000, guid: 6ff4cb6ad1b728545b147f77896aac3e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Shoes_Specular
-    second: {fileID: 2800000, guid: 12ee1c58128c5df40901a7bbd9095901, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Top_Diffuse
-    second: {fileID: 2800000, guid: 83b9c8cfe8bba3549ae49432d75101bc, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Top_Gloss
-    second: {fileID: 2800000, guid: b1be3e29f19e6574daead86839e927a5, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Top_Normal
-    second: {fileID: 2800000, guid: 606d78daf6226ef4695d1364354c8e56, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Top_Opacity
-    second: {fileID: 2800000, guid: 892e2ba12542ff4448757f0e80879c0e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Shae_Top_Specular
-    second: {fileID: 2800000, guid: a41b084351d3c614d98f796552dfd708, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -351,35 +201,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Bashful
-      takeName: mixamo.com
-      firstFrame: 0
-      lastFrame: 330
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []

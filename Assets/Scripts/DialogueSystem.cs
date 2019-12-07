@@ -14,6 +14,7 @@ public class DialogueSystem: MonoBehaviour {
     public float letterDelay = 0.1f;
     public float letterMultiplier = 0.5f;
 
+    public KeyCode DialogueInput = KeyCode.F;
 
     public string Names;
 
@@ -30,7 +31,7 @@ public class DialogueSystem: MonoBehaviour {
     void Start()
     {
         audioSource = GetComponent<AudioSource>();
-        dialogueText.text = "OLHA ESSA MERDA AQUI";
+        dialogueText.text = "";
     }
 
     void Update()
@@ -88,7 +89,7 @@ public class DialogueSystem: MonoBehaviour {
 
             while (true)
             {
-                if ( dialogueEnded == false)
+                if (Input.GetKeyDown(DialogueInput) && dialogueEnded == false)
                 {
                     break;
                 }
@@ -116,12 +117,12 @@ public class DialogueSystem: MonoBehaviour {
 
                 if (currentCharacterIndex < stringLength)
                 {
-                    
-                    
+                    if (Input.GetKey(DialogueInput))
+                    {
                         yield return new WaitForSeconds(letterDelay * letterMultiplier);
 
                         if (audioClip) audioSource.PlayOneShot(audioClip, 0.5F);
-                    
+                    }
                     else
                     {
                         yield return new WaitForSeconds(letterDelay);
@@ -135,7 +136,14 @@ public class DialogueSystem: MonoBehaviour {
                     break;
                 }
             }
-          
+            while (true)
+            {
+                if (Input.GetKeyDown(DialogueInput))
+                {
+                    break;
+                }
+                yield return 0;
+            }
             dialogueEnded = false;
             letterIsMultiplied = false;
             dialogueText.text = "";

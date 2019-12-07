@@ -19,10 +19,10 @@ public class NPC : MonoBehaviour {
     void Start () {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
     }
-	
-	void Update () {
+    
+    void Update () {
           Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
-          Pos.y += 175;
+          Pos.y += 100;
           ChatBackGround.position = Pos;
     }
 
@@ -30,7 +30,7 @@ public class NPC : MonoBehaviour {
     {
         this.gameObject.GetComponent<NPC>().enabled = true;
         FindObjectOfType<DialogueSystem>().EnterRangeOfNPC();
-        if ((other.gameObject.tag == "Player") )
+        if ((other.gameObject.tag == "Player") && Input.GetKeyDown(KeyCode.F))
         {
             this.gameObject.GetComponent<NPC>().enabled = true;
             dialogueSystem.Names = Name;
@@ -45,4 +45,3 @@ public class NPC : MonoBehaviour {
         this.gameObject.GetComponent<NPC>().enabled = false;
     }
 }
-

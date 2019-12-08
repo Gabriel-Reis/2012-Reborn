@@ -562,6 +562,7 @@ Transform:
   - {fileID: 1943099801}
   - {fileID: 1585074865}
   - {fileID: 469224115}
+  - {fileID: 1391191819}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2006,6 +2007,7 @@ GameObject:
   - component: {fileID: 469224114}
   - component: {fileID: 469224113}
   - component: {fileID: 469224112}
+  - component: {fileID: 469224116}
   m_Layer: 0
   m_Name: Hieroglifos
   m_TagString: Untagged
@@ -2086,6 +2088,49 @@ Transform:
   m_Father: {fileID: 71582380}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 77.114006, y: -273.591, z: -273.745}
+--- !u!114 &469224116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 469224111}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 818442580}
+  NPCCharacter: {fileID: 469224115}
+  Name: 
+  sentences:
+  - "Willian:Esses s\xE3o os hier\xF3glifos, o estilo de escrita da \xE9poca. Eles
+    usavam  essas  escritas  com  desenho  para  representar como era a vida naquela
+    \xE9poca"
+  - "Willian: Ao contr\xE1rio do que muitos pensam,  a cultura, medicina e engenharia
+    dos povos africanos eram muito bem desenvolvidas e tem muito que a gente pode
+    descobrir aqui"
+  - "Willian:Dizem que alguns hier\xF3glifos possuem maldi\xE7\xF5es, Wheatley, voc\xEA
+    consegue ler isso ?"
+  - "WHEATLEY:Algu\xE9m tem que trabalhar aqui n\xE9 ...*murmuros* \u201Cqualquer
+    pessoa que viole . . . .  cair\xE1 em uma maldic \u0327 \u0303ao, que trar \u0301a
+    a destrui\xE7\xE3o de toda a humanidade\u201D"
+  - "WHEATLEY: \xC9 galera, melhor irmos para casa, por hoje j\xE1 foi osulficiente!"
+  - "TODOS: O que estava escrito?\t"
+  - 'WHEATLEY: Resumindo? Vamos destruir tudo.'
+  - "Akira: Mas o que estava escrito afinal?\t"
+  - "WHEATLEY:Estava falando, quer dizer escrito que quem violar alguma coisa que
+    estava meio apagado, vai ter uma maldi\xE7\xE3o que vai destruir a humanidade,
+    ou seja, vamos para casa n\xE9 galera ?"
+  - "WHEATLEY sai da sala do fara\xF3 ap\xF3s alguns segundos,  WHEATLEY coloca cabe\xE7a
+    na passagem da sala \nWHEATLEY:Porque voc\xEAs est\xE3o parados a\xED ainda ?"
+  - AKIRA:Pare de acreditar em coisas sem sentido!
+  - "ALPHYS:N\xE3o vamos desistir e\xE9 ... Nosso jeito ninja!!\nEstamos aqui, vamos
+    at\xE9 o fim\u2014"
+  - "Willian:Acho que j\xE1 ouvi isso em algum lugar !?"
+  - "ALPHYS:rs ... rs ... rs ... rs ... (t\xEDmida)"
+  - "WHEATLEY:N\xF3s vamos destruir o planeta inteiro, e voc\xEAs preocupados com
+    a otaku?!"
 --- !u!1 &470377083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5748,7 +5793,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh15336
+  m_Name: pb_Mesh5808
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -5902,6 +5947,142 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1391191818
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1391191819}
+  - component: {fileID: 1391191823}
+  - component: {fileID: 1391191822}
+  - component: {fileID: 1391191821}
+  - component: {fileID: 1391191820}
+  m_Layer: 0
+  m_Name: KingsTumbCOLIDER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1391191819
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391191818}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 158.09, y: 11.542728, z: -10.9}
+  m_LocalScale: {x: 4.30693, y: 2.5186899, z: 8.44259}
+  m_Children: []
+  m_Father: {fileID: 71582380}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1391191820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391191818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 818442580}
+  NPCCharacter: {fileID: 1391191819}
+  Name: 
+  sentences:
+  - "Willian:Olhem nas paredes norte e sul (aponta para elas) percebemum eixo para
+    cima ? Esses eixos parecem ser alinhados com as estrelas ou uma regi\xE3o do c\xE9u"
+  - "WHEATLEY:Imagina o tamanho da r\xE9gua para alinhas estas coisas!!!"
+  - AKIRA :WHEATLEY!!! (GRITO)
+  - "Akira:Os eixos tem algum prop\xF3sito espec\xED\u0131fico ?"
+  - 'ALPHYS:Talvez ... olhar as estrelas '
+  - "Willian:At\xE9  hoje  n\xE3o  temos  certeza,  mas  acreditamos  que  fazia parte
+    do ritual que levava o esp\xED\u0131rito do fara\xF3 aos c\xE9us\t"
+  - "\xB7 -------Queda do escaravelho --------"
+  - "WHEATLEY:Olha a maldi\xE7\xE3oooo, ao mundo acabando ai \xF3\xF3\xF3oo!!!!"
+  - "\xB7 ALPHYS:Que bobagem ...\r"
+  - 'AKIRA: ...'
+  - Willian:Concordo com a APLHYS, mas nao queremos arriscar
+  - "--------- Coloca o escaravelho no lugar\r ---------"
+  - "AKIRA:Estou fazendo algumas contas e tentando descobrir\r\ncom precisao para
+    onde os eixos est \u02DC ao apontando. "
+  - '--------ALPHYS observa imagens antigas--------'
+  - "ALPHYS:\u201DPalavras errantes podem derrubar imperios\u201D..."
+  - 'AKIRA: Alphys e suas referencias...'
+  - "ALPHYS:\u201DPalavras errantes podem derrubar imperios\u201D..."
+  - "ALPHYS:A vida deles parece ... ter sido melhor que a\r\nnossa, n\xE3o \xE9?"
+  - "WHEATLEY:CLARO! Areia no pe, sol na cabe\xE7a, sem re\rfrigerante e sem ar condicionado,
+    MEU SONHO MESMO!\r"
+  - ALPHYS:rs . . . rs . . . rs ..
+  - '-------------WHEATLEY olha para o teto pensativo -----------'
+  - Willian:O que esta pensando ?
+  - "WHEATLEY:No tamanho da r\xE9gua, devia ter uns 6 metros.\r  Mas ainda nao entendi
+    como entraram com\nela aqui"
+--- !u!65 &1391191821
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391191818}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &1391191822
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391191818}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1391191823
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1391191818}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1424995377
 GameObject:
   m_ObjectHideFlags: 0
@@ -7225,6 +7406,7 @@ GameObject:
   - component: {fileID: 1903179278}
   - component: {fileID: 1903179277}
   - component: {fileID: 1903179276}
+  - component: {fileID: 1903179280}
   m_Layer: 0
   m_Name: KingsTumb
   m_TagString: Untagged
@@ -7240,11 +7422,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1903179275}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.355169, y: 1.158466, z: 1.183029}
+  m_Center: {x: 0.0365576, y: 0.07923271, z: 0.006631382}
 --- !u!23 &1903179277
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7304,6 +7486,50 @@ Transform:
   m_Father: {fileID: 71582380}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1903179280
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1903179275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 818442580}
+  NPCCharacter: {fileID: 1903179279}
+  Name: 
+  sentences:
+  - "Willian:Olhem nas paredes norte e sul (aponta para elas) percebemum eixo para
+    cima ? Esses eixos parecem ser alinhados com as estrelas ou uma regi\xE3o do c\xE9u"
+  - "WHEATLEY:Imagina o tamanho da r\xE9gua para alinhas estas coisas!!!"
+  - AKIRA :WHEATLEY!!! (GRITO)
+  - "Akira:Os eixos tem algum prop\xF3sito espec\xED\u0131fico ?"
+  - 'ALPHYS:Talvez ... olhar as estrelas '
+  - "Willian:At\xE9  hoje  n\xE3o  temos  certeza,  mas  acreditamos  que  fazia parte
+    do ritual que levava o esp\xED\u0131rito do fara\xF3 aos c\xE9us\t"
+  - "\xB7 -------Queda do escaravelho --------"
+  - "WHEATLEY:Olha a maldi\xE7\xE3oooo, ao mundo acabando ai \xF3\xF3\xF3oo!!!!"
+  - "\xB7 ALPHYS:Que bobagem ...\r"
+  - 'AKIRA: ...'
+  - Willian:Concordo com a APLHYS, mas nao queremos arriscar
+  - "--------- Coloca o escaravelho no lugar\r ---------"
+  - "AKIRA:Estou fazendo algumas contas e tentando descobrir\r\ncom precisao para
+    onde os eixos est \u02DC ao apontando. "
+  - '--------ALPHYS observa imagens antigas--------'
+  - "ALPHYS:\u201DPalavras errantes podem derrubar imperios\u201D..."
+  - 'AKIRA: Alphys e suas referencias...'
+  - "ALPHYS:\u201DPalavras errantes podem derrubar imperios\u201D..."
+  - "ALPHYS:A vida deles parece ... ter sido melhor que a\r\nnossa, n\xE3o \xE9?"
+  - "WHEATLEY:CLARO! Areia no pe, sol na cabe\xE7a, sem re\rfrigerante e sem ar condicionado,
+    MEU SONHO MESMO!\r"
+  - ALPHYS:rs . . . rs . . . rs ..
+  - '-------------WHEATLEY olha para o teto pensativo -----------'
+  - Willian:O que esta pensando ?
+  - "WHEATLEY:No tamanho da r\xE9gua, devia ter uns 6 metros.\r  Mas ainda nao entendi
+    como entraram com\nela aqui"
 --- !u!1 &1914878894
 GameObject:
   m_ObjectHideFlags: 0

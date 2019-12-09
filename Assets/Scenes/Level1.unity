@@ -1132,7 +1132,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130962836}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
   m_Name: 
@@ -1157,6 +1157,9 @@ MonoBehaviour:
   - 'ALPHYS: Talvez . . .  rs . . .  rs . . .  rs ...rs'
   - William:Exatamente, Al
   - 'Wheatley : A doutora ataca novamente!'
+  scoreText: {fileID: 0}
+  objetiveNumber: 0
+  objectiveText: {fileID: 0}
 --- !u!65 &130962839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1552,7 +1555,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 'Score: 0'
+  m_Text: 0
 --- !u!222 &221175867
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2131,6 +2134,9 @@ MonoBehaviour:
   - "ALPHYS:rs ... rs ... rs ... rs ... (t\xEDmida)"
   - "WHEATLEY:N\xF3s vamos destruir o planeta inteiro, e voc\xEAs preocupados com
     a otaku?!"
+  scoreText: {fileID: 221175866}
+  objetiveNumber: 2
+  objectiveText: {fileID: 440344425}
 --- !u!1 &470377083
 GameObject:
   m_ObjectHideFlags: 0
@@ -5828,7 +5834,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391191818}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
   m_Name: 
@@ -5865,6 +5871,9 @@ MonoBehaviour:
   - Willian:O que esta pensando ?
   - "WHEATLEY:No tamanho da r\xE9gua, devia ter uns 6 metros.\r  Mas ainda nao entendi
     como entraram com\nela aqui"
+  scoreText: {fileID: 0}
+  objetiveNumber: 0
+  objectiveText: {fileID: 0}
 --- !u!65 &1391191821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6032,6 +6041,9 @@ MonoBehaviour:
   Name: Table
   sentences:
   - I am table
+  scoreText: {fileID: 221175866}
+  objetiveNumber: 1
+  objectiveText: {fileID: 1496631066}
 --- !u!1 &1496631064
 GameObject:
   m_ObjectHideFlags: 0
@@ -7530,6 +7542,9 @@ MonoBehaviour:
   - Willian:O que esta pensando ?
   - "WHEATLEY:No tamanho da r\xE9gua, devia ter uns 6 metros.\r  Mas ainda nao entendi
     como entraram com\nela aqui"
+  scoreText: {fileID: 221175866}
+  objetiveNumber: 4
+  objectiveText: {fileID: 1914878896}
 --- !u!1 &1914878894
 GameObject:
   m_ObjectHideFlags: 0
@@ -9374,7 +9389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChatBackGround: {fileID: 818442580}
   NPCCharacter: {fileID: 1989785282}
-  Name: 
+  Name: PAPIRO
   sentences:
   - "Willian: \nAt\xE9 hoje n\xE3o se sabe a hist\xF3ria deste t\xFAmulo"
   - "WHEATLEY:\nQuase 5000 anos e nimgu\xE9m aprendeu nada ? Ainda bem que chegamos
@@ -9398,6 +9413,9 @@ MonoBehaviour:
 
     Exatamente, Al'
   - "Wheatley: \nA doutora ataca novamente!"
+  scoreText: {fileID: 221175866}
+  objetiveNumber: 3
+  objectiveText: {fileID: 2065729012}
 --- !u!1 &2027518481
 GameObject:
   m_ObjectHideFlags: 0

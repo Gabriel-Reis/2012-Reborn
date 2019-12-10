@@ -225,8 +225,8 @@ MonoBehaviour:
   NPCCharacter: {fileID: 5195206}
   Name: 
   sentences:
-  - "AKIRA:Estou fazendo algumas contas e tentando descobrir\r\ncom precisao para
-    onde os eixos est \u02DC ao apontando. "
+  - "Akira:\nEstou fazendo algumas contas e tentando descobrir\r\ncom precisao para
+    onde os eixos est\xE3o apontando. "
   scoreText: {fileID: 221175866}
   objetiveNumber: 7
   objectiveText: {fileID: 1207586699}
@@ -240,10 +240,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 1.1365874
+  m_Radius: 1.3611852
   m_Height: 3.1361246
   m_Direction: 1
-  m_Center: {x: -0.13658728, y: 0.56806225, z: 0}
+  m_Center: {x: -0.13658728, y: 0.56806225, z: 0.22459778}
 --- !u!4 &5195206 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881,
@@ -572,7 +572,7 @@ Transform:
   m_Children:
   - {fileID: 908840846}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &71582379
 GameObject:
@@ -606,15 +606,15 @@ Transform:
   - {fileID: 469224115}
   - {fileID: 1989785282}
   - {fileID: 1903179279}
+  - {fileID: 1301766664}
   - {fileID: 1943099801}
+  - {fileID: 1513649022}
+  - {fileID: 5195206}
   - {fileID: 1585074865}
-  - {fileID: 130962837}
-  - {fileID: 1391191819}
-  - {fileID: 2109793152}
-  - {fileID: 512839300}
   - {fileID: 379577235}
+  - {fileID: 724219403}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &76182725
 GameObject:
@@ -1153,7 +1153,6 @@ GameObject:
   - component: {fileID: 130962841}
   - component: {fileID: 130962840}
   - component: {fileID: 130962839}
-  - component: {fileID: 130962838}
   m_Layer: 0
   m_Name: QueensTumbCOLIDER
   m_TagString: Untagged
@@ -1169,47 +1168,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130962836}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 92.01, y: 2.53273, z: 24.298414}
-  m_LocalScale: {x: 1.7674619, y: 1.2569622, z: 3.2834735}
+  m_LocalPosition: {x: 0.010260151, y: 0, z: 0}
+  m_LocalScale: {x: 0.9369, y: 0.94825226, z: 0.9243492}
   m_Children: []
-  m_Father: {fileID: 71582380}
-  m_RootOrder: 7
+  m_Father: {fileID: 1989785282}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &130962838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130962836}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChatBackGround: {fileID: 818442580}
-  NPCCharacter: {fileID: 130962837}
-  Name: 
-  sentences:
-  - "Willian: At\xE9 hoje n\xE3o se sabe a hist\xF3ria deste t\xFAmulo"
-  - "WHEATLEY: Quase 5000 anos e nimgu\xE9m aprendeu nada ? Ainda bem que chegamos
-    em!!"
-  - 'AKIRA: Quieto, Wheatley!'
-  - "Willian: O interessante \xE9 que o t\xFAmulo est\xE1 bem no meio entre a face
-    norte e a sul da pir\xE2mide\nUm  dos  nossos  objetivos \xE9 tentar  descobrir
-    \ mais  coisasdaqui!"
-  - "AKIRA: Est\xE1 um cheiro estranho aqui!!"
-  - "ALPHYS: Provavelmente ...\xE9 algum composto qu\xEDmico ... William disse que
-    a medicina deles era desenvolvidas, talvez durante a mumifica\xE7\xE3o eles usassem
-    algo que reagisse como formalde\u0131do para conservar as c\xE9lulas e algo como
-    acetona para desidratar os corpos... alguma mistura com  \xE1gua e sal, provavelmente?"
-  - "AKIRA: Voc\xEA \xE9 a doutora em qu\xEDmica aqui, deve estar certa!"
-  - 'ALPHYS: Talvez . . .  rs . . .  rs . . .  rs ...rs'
-  - William:Exatamente, Al
-  - 'Wheatley : A doutora ataca novamente!'
-  scoreText: {fileID: 0}
-  objetiveNumber: 0
-  objectiveText: {fileID: 0}
 --- !u!65 &130962839
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1535,6 +1499,149 @@ Transform:
   m_Father: {fileID: 1010215440}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -13.64}
+--- !u!1001 &212574637
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_Name
+      value: Wheatley
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.95
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 36.99409
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 3.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.7151951
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.6989249
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 91.318
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.8267
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.8267
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.8267
+      objectReference: {fileID: 0}
+    - target: {fileID: 9500000, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 79ab6e7b9a4004f48a691195ec11492f, type: 2}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+--- !u!1 &212574638 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: b036a5314c413c64e81cc42d2356b85d,
+    type: 3}
+  m_PrefabInstance: {fileID: 212574637}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &212574639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212574638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 593d4dac0a56d48dc96203b26863ebe9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  XSensitivity: 2
+  YSensitivity: 2
+  clampVerticalRotation: 1
+  MinimumX: -90
+  MaximumX: 90
+  smooth: 0
+  smoothTime: 5
+--- !u!114 &212574640
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212574638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0306d65e155bb491cb8ddcc717a61a5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 5
+  gravity: 9.81
+  moveBase: 5
+--- !u!114 &212574641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212574638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb8f3580c8152ce4a8e8aed3268906ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!143 &212574642
+CharacterController:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212574638}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Height: 2
+  m_Radius: 0.5
+  m_SlopeLimit: 45
+  m_StepOffset: 0.3
+  m_SkinWidth: 0.08
+  m_MinMoveDistance: 0.001
+  m_Center: {x: 0, y: 0.8, z: 0}
 --- !u!1 &221175864
 GameObject:
   m_ObjectHideFlags: 0
@@ -1797,7 +1904,7 @@ RectTransform:
   m_Children:
   - {fileID: 1110996738}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1931,16 +2038,20 @@ MonoBehaviour:
   NPCCharacter: {fileID: 379577235}
   Name: 
   sentences:
-  - "Willian:Olhem nas paredes norte e sul (aponta para elas) percebemum eixo para
+  - "Willian:\nOlhem nas paredes norte e sul (aponta para elas) percebem um eixo para
     cima ? Esses eixos parecem ser alinhados com as estrelas ou uma regi\xE3o do c\xE9u"
-  - "WHEATLEY:Imagina o tamanho da r\xE9gua para alinhas estas coisas!!!"
-  - AKIRA :WHEATLEY!!! (GRITO)
-  - "Akira:Os eixos tem algum prop\xF3sito espec\xED\u0131fico ?"
-  - 'ALPHYS:Talvez ... olhar as estrelas '
-  - "Willian:At\xE9  hoje  n\xE3o  temos  certeza,  mas  acreditamos  que  fazia parte
-    do ritual que levava o esp\xED\u0131rito do fara\xF3 aos c\xE9us\t"
+  - "Wheatley:\nImagina o tamanho da r\xE9gua para alinhas estas coisas!!!"
+  - 'Akira:
+
+    WHEATLEY!!! (GRITO)'
+  - "Akira:\nOs eixos tem algum prop\xF3sito espec\xED\u0131fico ?"
+  - 'Alphys:
+
+    Talvez ... olhar as estrelas '
+  - "Willian:\nAt\xE9  hoje  n\xE3o  temos  certeza,  mas  acreditamos  que  fazia
+    parte do ritual que levava o esp\xEDrito do fara\xF3 aos c\xE9us\t"
   scoreText: {fileID: 0}
-  objetiveNumber: 0
+  objetiveNumber: -1
   objectiveText: {fileID: 0}
 --- !u!136 &379577232
 CapsuleCollider:
@@ -1952,10 +2063,10 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
-  m_Radius: 7
-  m_Height: 14
+  m_Radius: 6.660515
+  m_Height: 15.777039
   m_Direction: 1
-  m_Center: {x: 0, y: 1, z: 0}
+  m_Center: {x: -0.33948517, y: 1.8885193, z: 0}
 --- !u!23 &379577233
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2013,7 +2124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 71582380}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
 --- !u!1 &407965418
 GameObject:
@@ -2278,32 +2389,35 @@ MonoBehaviour:
   NPCCharacter: {fileID: 469224115}
   Name: 
   sentences:
-  - "Willian:Esses s\xE3o os hier\xF3glifos, o estilo de escrita da \xE9poca. Eles
+  - "Willian:\nEsses s\xE3o os hier\xF3glifos, o estilo de escrita da \xE9poca. Eles
     usavam  essas  escritas  com  desenho  para  representar como era a vida naquela
     \xE9poca"
-  - "Willian: Ao contr\xE1rio do que muitos pensam,  a cultura, medicina e engenharia
+  - "Willian:\n Ao contr\xE1rio do que muitos pensam,  a cultura, medicina e engenharia
     dos povos africanos eram muito bem desenvolvidas e tem muito que a gente pode
     descobrir aqui"
-  - "Willian:Dizem que alguns hier\xF3glifos possuem maldi\xE7\xF5es, Wheatley, voc\xEA
-    consegue ler isso ?"
-  - "WHEATLEY:Algu\xE9m tem que trabalhar aqui n\xE9 ...*murmuros* \u201Cqualquer
-    pessoa que viole . . . .  cair\xE1 em uma maldic \u0327 \u0303ao, que trar \u0301a
-    a destrui\xE7\xE3o de toda a humanidade\u201D"
-  - "WHEATLEY: \xC9 galera, melhor irmos para casa, por hoje j\xE1 foi osulficiente!"
-  - "TODOS: O que estava escrito?\t"
-  - 'WHEATLEY: Resumindo? Vamos destruir tudo.'
-  - "Akira: Mas o que estava escrito afinal?\t"
-  - "WHEATLEY:Estava falando, quer dizer escrito que quem violar alguma coisa que
+  - "Willian:\nDizem que alguns hier\xF3glifos possuem maldi\xE7\xF5es, Wheatley,
+    voc\xEA consegue ler isso ?"
+  - "Wheatley:\nAlgu\xE9m tem que trabalhar aqui n\xE9 ...*murmuros* qualquer pessoa
+    que viole . . .   cair\xE1 em uma maldi\xE7\xE3o, ... destrui\xE7\xE3o de toda
+    a humanidade"
+  - "Wheatley:\n \xC9 galera, melhor irmos para casa, por hoje j\xE1 foi o suficiente!"
+  - "TODOS:\n O que estava escrito?\t"
+  - "Wheatley:\n Resumindo? Vamos destruir tudo."
+  - "Akira:\n Mas o que estava escrito afinal?\t"
+  - "Wheatley:\nEstava falando, quer dizer escrito que quem violar alguma coisa que
     estava meio apagado, vai ter uma maldi\xE7\xE3o que vai destruir a humanidade,
-    ou seja, vamos para casa n\xE9 galera ?"
-  - "WHEATLEY sai da sala do fara\xF3 ap\xF3s alguns segundos,  WHEATLEY coloca cabe\xE7a
-    na passagem da sala \nWHEATLEY:Porque voc\xEAs est\xE3o parados a\xED ainda ?"
-  - AKIRA:Pare de acreditar em coisas sem sentido!
-  - "ALPHYS:N\xE3o vamos desistir e\xE9 ... Nosso jeito ninja!!\nEstamos aqui, vamos
-    at\xE9 o fim\u2014"
-  - "Willian:Acho que j\xE1 ouvi isso em algum lugar !?"
-  - "ALPHYS:rs ... rs ... rs ... rs ... (t\xEDmida)"
-  - "WHEATLEY:N\xF3s vamos destruir o planeta inteiro, e voc\xEAs preocupados com
+    ou seja, vamos para casa n\xE3o \xE9, galera ?"
+  - "**Wheatley caminha em dire\xE7\xE3o a sa\xEDda da pir\xE2mide. Ap\xF3s alguns
+    segundos, ele volta e diz:**"
+  - "Wheatley:\n Porque voc\xEAs est\xE3o parados a\xED ainda ?"
+  - "Akira:\n Pare de acreditar em coisas sem sentido!"
+  - "Alphys:\nN\xE3o vamos desistir esse \xE9 ... Nosso jeito ninja!!\nEstamos aqui,
+    vamos at\xE9 o fim!!"
+  - "Willian:\nAcho que j\xE1 ouvi isso em algum lugar?"
+  - 'Alphys:
+
+    rs ... rs ... rs ... rs ...'
+  - "Wheatley:\nN\xF3s vamos destruir o planeta inteiro, e voc\xEAs preocupados com
     a otaku?!"
   scoreText: {fileID: 221175866}
   objetiveNumber: 2
@@ -2606,7 +2720,6 @@ GameObject:
   - component: {fileID: 512839304}
   - component: {fileID: 512839303}
   - component: {fileID: 512839302}
-  - component: {fileID: 512839301}
   m_Layer: 0
   m_Name: AlphysColider
   m_TagString: Untagged
@@ -2621,48 +2734,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 512839299}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 159.51, y: 11.781, z: 7.57}
+  m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: -0.7071068}
+  m_LocalPosition: {x: -0.05741317, y: 1.9672699, z: -0.45635992}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
-  m_Father: {fileID: 71582380}
-  m_RootOrder: 10
+  m_Father: {fileID: 1513649022}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &512839301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 512839299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChatBackGround: {fileID: 818442580}
-  NPCCharacter: {fileID: 512839300}
-  Name: 
-  sentences:
-  - "Willian: At\xE9 hoje n\xE3o se sabe a hist\xF3ria deste t\xFAmulo"
-  - "WHEATLEY: Quase 5000 anos e nimgu\xE9m aprendeu nada ? Ainda bem que chegamos
-    em!!"
-  - 'AKIRA: Quieto, Wheatley!'
-  - "Willian: O interessante \xE9 que o t\xFAmulo est\xE1 bem no meio entre a face
-    norte e a sul da pir\xE2mide\nUm  dos  nossos  objetivos \xE9 tentar  descobrir
-    \ mais  coisasdaqui!"
-  - "AKIRA: Est\xE1 um cheiro estranho aqui!!"
-  - "ALPHYS: Provavelmente ...\xE9 algum composto qu\xEDmico ... William disse que
-    a medicina deles era desenvolvidas, talvez durante a mumifica\xE7\xE3o eles usassem
-    algo que reagisse como formalde\u0131do para conservar as c\xE9lulas e algo como
-    acetona para desidratar os corpos... alguma mistura com  \xE1gua e sal, provavelmente?"
-  - "AKIRA: Voc\xEA \xE9 a doutora em qu\xEDmica aqui, deve estar certa!"
-  - 'ALPHYS: Talvez . . .  rs . . .  rs . . .  rs ...rs'
-  - William:Exatamente, Al
-  - 'Wheatley : A doutora ataca novamente!'
-  scoreText: {fileID: 0}
-  objetiveNumber: 0
-  objectiveText: {fileID: 0}
 --- !u!65 &512839302
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2674,8 +2752,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1, y: 2.1817837, z: 0.6155939}
+  m_Center: {x: 0, y: -0.3881197, z: -0.027224064}
 --- !u!23 &512839303
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3355,7 +3433,7 @@ Transform:
   m_LocalScale: {x: 3.3442, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 13.686001, y: 87.809006, z: -1.473}
 --- !u!1 &632396600
 GameObject:
@@ -3512,14 +3590,131 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &724219402
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 724219403}
+  - component: {fileID: 724219407}
+  - component: {fileID: 724219406}
+  - component: {fileID: 724219405}
+  - component: {fileID: 724219404}
+  m_Layer: 0
+  m_Name: Text2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &724219403
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724219402}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 32.900642, y: -8.107271, z: 0.20841312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 71582380}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &724219404
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724219402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 818442580}
+  NPCCharacter: {fileID: 724219403}
+  Name: 
+  sentences:
+  - 'Wheatley:
+
+    Eu sou destro, acho melhor ir pela direita!'
+  - "Alphys:\nEu \u2026 n\xE3o sei ... o que voc\xEA acha Willian?"
+  - "Willian pensando:\nN\xE3o sei porque, mas eu tamb\xE9m iria pela direita!"
+  - "Willian pensando:\nMas na verdade, n\xE3o far\xE1 diferen\xE7a!!!"
+  scoreText: {fileID: 221175866}
+  objetiveNumber: -1
+  objectiveText: {fileID: 0}
+--- !u!65 &724219405
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724219402}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.566353, y: 6.0465717, z: 10.89676}
+  m_Center: {x: 1.611866, y: 2.5232859, z: -0.09914732}
+--- !u!23 &724219406
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724219402}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &724219407
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 724219402}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &737693779
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 71582380}
     m_Modifications:
     - target: {fileID: 100008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_Name
@@ -3527,35 +3722,35 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 153.94
+      value: 147.63065
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 48.036
+      value: 10.2787285
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.81
+      value: -15.111588
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0.98743165
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: -0.15804675
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_RootOrder
-      value: 10
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3563,7 +3758,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
+      value: -198.187
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -3820,9 +4015,9 @@ RectTransform:
   m_Father: {fileID: 908840846}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -426, y: -136}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 341.44, y: 102.57}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &818442581
@@ -4289,7 +4484,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 32.327, y: -87.927, z: -40.475002}
 --- !u!1 &930063551
 GameObject:
@@ -4552,6 +4747,97 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 938089218}
   m_CullTransparentMesh: 0
+--- !u!1 &958434217
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 958434218}
+  - component: {fileID: 958434222}
+  - component: {fileID: 958434221}
+  - component: {fileID: 958434220}
+  m_Layer: 0
+  m_Name: MesaPapiroCOLIDER
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &958434218
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958434217}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1424995381}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &958434220
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958434217}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!23 &958434221
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958434217}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &958434222
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 958434217}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1 &1003127345
 GameObject:
   m_ObjectHideFlags: 0
@@ -4977,31 +5263,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8f3580c8152ce4a8e8aed3268906ac, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1023811361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1023811356}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChatBackGround: {fileID: 0}
-  NPCCharacter: {fileID: 1023811363}
-  Name: 
-  sentences: []
-  scoreText: {fileID: 0}
-  objetiveNumber: 0
-  objectiveText: {fileID: 0}
---- !u!4 &1023811363 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881,
-    type: 3}
-  m_PrefabInstance: {fileID: 1285860065}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1048029729
 GameObject:
   m_ObjectHideFlags: 0
@@ -5093,6 +5354,97 @@ Transform:
   m_Father: {fileID: 1010215440}
   m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.056001}
+--- !u!1 &1048195231
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048195232}
+  - component: {fileID: 1048195235}
+  - component: {fileID: 1048195234}
+  - component: {fileID: 1048195233}
+  m_Layer: 0
+  m_Name: WheatleyColider
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1048195232
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048195231}
+  m_LocalRotation: {x: -0, y: -0.042138867, z: -0, w: 0.99911183}
+  m_LocalPosition: {x: 0.025, y: 1.1204498, z: -0.015}
+  m_LocalScale: {x: 1.135461, y: 1.1354604, z: 1.135461}
+  m_Children: []
+  m_Father: {fileID: 1301766664}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1048195233
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048195231}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 2.1817837, z: 0.6155939}
+  m_Center: {x: 0, y: -0.3881197, z: -0.027224064}
+--- !u!23 &1048195234
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048195231}
+  m_Enabled: 0
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!33 &1048195235
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048195231}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &1065398383
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5782,6 +6134,75 @@ Transform:
   m_Father: {fileID: 1010215440}
   m_RootOrder: 32
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 12.056001}
+--- !u!1001 &1244887211
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 71582380}
+    m_Modifications:
+    - target: {fileID: 100010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_Name
+      value: Wheatley(1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 146.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 10.196438
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 18.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0.9999992
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.0012558937
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 179.856
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1.7614007
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1.7614
+      objectReference: {fileID: 0}
+    - target: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1.7614007
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b036a5314c413c64e81cc42d2356b85d, type: 3}
 --- !u!1 &1273765915
 GameObject:
   m_ObjectHideFlags: 0
@@ -5914,7 +6335,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 400008, guid: e3279118a8335c647ade1462c0bff881, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -6128,6 +6549,54 @@ Transform:
   m_Father: {fileID: 1010215440}
   m_RootOrder: 36
   m_LocalEulerAnglesHint: {x: 0, y: -90.00001, z: 0}
+--- !u!1 &1301766663 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 100010, guid: b036a5314c413c64e81cc42d2356b85d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1244887211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1301766664 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400010, guid: b036a5314c413c64e81cc42d2356b85d,
+    type: 3}
+  m_PrefabInstance: {fileID: 1244887211}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1301766665
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301766663}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ChatBackGround: {fileID: 818442580}
+  NPCCharacter: {fileID: 1301766664}
+  Name: 
+  sentences:
+  - "Willian:\nNo que est\xE1 pensando Wheatley?\r\n"
+  - "Wheatley:\nNo tamanho da r\xE9gua, deveria ter uns 6 metros.\nMas ainda nao entendi\r
+    como entraram com ela aqui."
+  scoreText: {fileID: 221175866}
+  objetiveNumber: 6
+  objectiveText: {fileID: 161931384}
+--- !u!136 &1301766666
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1301766663}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.52067375
+  m_Height: 2.4130168
+  m_Direction: 1
+  m_Center: {x: 3.1076053e-10, y: 0.70650804, z: 0.020673709}
 --- !u!1 &1303485027
 GameObject:
   m_ObjectHideFlags: 0
@@ -6225,7 +6694,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh5896
+  m_Name: pb_Mesh13250
   serializedVersion: 9
   m_SubMeshes:
   - serializedVersion: 2
@@ -6391,7 +6860,6 @@ GameObject:
   - component: {fileID: 1391191823}
   - component: {fileID: 1391191822}
   - component: {fileID: 1391191821}
-  - component: {fileID: 1391191820}
   m_Layer: 0
   m_Name: KingsTumbCOLIDER
   m_TagString: Untagged
@@ -6407,59 +6875,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1391191818}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 158.09, y: 11.542728, z: -10.9}
-  m_LocalScale: {x: 4.30693, y: 2.5186899, z: 8.44259}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 71582380}
-  m_RootOrder: 8
+  m_Father: {fileID: 1903179279}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1391191820
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1391191818}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChatBackGround: {fileID: 818442580}
-  NPCCharacter: {fileID: 1391191819}
-  Name: 
-  sentences:
-  - "Willian:Olhem nas paredes norte e sul (aponta para elas) percebemum eixo para
-    cima ? Esses eixos parecem ser alinhados com as estrelas ou uma regi\xE3o do c\xE9u"
-  - "WHEATLEY:Imagina o tamanho da r\xE9gua para alinhas estas coisas!!!"
-  - AKIRA :WHEATLEY!!! (GRITO)
-  - "Akira:Os eixos tem algum prop\xF3sito espec\xED\u0131fico ?"
-  - 'ALPHYS:Talvez ... olhar as estrelas '
-  - "Willian:At\xE9  hoje  n\xE3o  temos  certeza,  mas  acreditamos  que  fazia parte
-    do ritual que levava o esp\xED\u0131rito do fara\xF3 aos c\xE9us\t"
-  - "\xB7 -------Queda do escaravelho --------"
-  - "WHEATLEY:Olha a maldi\xE7\xE3oooo, ao mundo acabando ai \xF3\xF3\xF3oo!!!!"
-  - "\xB7 ALPHYS:Que bobagem ...\r"
-  - 'AKIRA: ...'
-  - Willian:Concordo com a APLHYS, mas nao queremos arriscar
-  - "--------- Coloca o escaravelho no lugar\r ---------"
-  - "AKIRA:Estou fazendo algumas contas e tentando descobrir\r\ncom precisao para
-    onde os eixos est \u02DC ao apontando. "
-  - '--------ALPHYS observa imagens antigas--------'
-  - "ALPHYS:\u201DPalavras errantes podem derrubar imperios\u201D..."
-  - 'AKIRA: Alphys e suas referencias...'
-  - "ALPHYS:\u201DPalavras errantes podem derrubar imperios\u201D..."
-  - "ALPHYS:A vida deles parece ... ter sido melhor que a\r\nnossa, n\xE3o \xE9?"
-  - "WHEATLEY:CLARO! Areia no pe, sol na cabe\xE7a, sem re\rfrigerante e sem ar condicionado,
-    MEU SONHO MESMO!\r"
-  - ALPHYS:rs . . . rs . . . rs ..
-  - '-------------WHEATLEY olha para o teto pensativo -----------'
-  - Willian:O que esta pensando ?
-  - "WHEATLEY:No tamanho da r\xE9gua, devia ter uns 6 metros.\r  Mas ainda nao entendi
-    como entraram com\nela aqui"
-  scoreText: {fileID: 0}
-  objetiveNumber: 0
-  objectiveText: {fileID: 0}
 --- !u!65 &1391191821
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -6549,8 +6970,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 1.5358118, y: 1.2382272, z: 1.588209}
+  m_Center: {x: -0.26790592, y: 0.11911347, z: -0.042953692}
 --- !u!23 &1424995379
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6606,7 +7027,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 122.70064, y: -35.44727, z: -6.9015865}
   m_LocalScale: {x: 1.6875, y: 1.8120756, z: 3.3658922}
-  m_Children: []
+  m_Children:
+  - {fileID: 958434218}
   m_Father: {fileID: 71582380}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -6626,7 +7048,25 @@ MonoBehaviour:
   NPCCharacter: {fileID: 1424995381}
   Name: Table
   sentences:
-  - I am table
+  - "Willian:\nOlhem esse papel, algu\xE9m sabe o que \xE9?"
+  - '**silencio total**'
+  - "Willian:\nIsto \xE9 um papiro, que \xE9 feito com a parte interna de uma planta
+    chamada papiro."
+  - 'Willian:
+
+    Essa parte era cortada em tiras que eram posteriormente molhadas e cruzadas, para
+    depois serem prensadas.'
+  - 'Willian:
+
+    Eles colavam varias dessas folhas para depois enrolar criando pergaminhos.'
+  - 'Akira:
+
+    Nossa eles escreviam em plantas!'
+  - 'Alphys:
+
+    Ah! Pergaminho tipo daquele filme do panda que luta Kung Fu'
+  - "Wheatley:\nEscrever em plantas \xE9 o de menos, o panda era filho de um PATO
+    !!!!!!"
   scoreText: {fileID: 221175866}
   objetiveNumber: 1
   objectiveText: {fileID: 1496631066}
@@ -6745,13 +7185,19 @@ MonoBehaviour:
   NPCCharacter: {fileID: 1513649022}
   Name: 
   sentences:
-  - "ALPHYS:\u201DPalavras errantes podem derrubar imperios\u201D..."
-  - 'AKIRA: Alphys e suas referencias...'
-  - WHEATLEY:Neerd!!!
+  - "Alphys:\n\u201DPalavras errantes podem derrubar imperios\u201D..."
+  - 'Akira:
+
+    Alphys e suas referencias...'
+  - 'Wheatley:
+
+    Neerd!!!'
   - "ALPHYS : A vida deles parece ... ter sido melhor que a nossa, n\xE3o \xE9?"
-  - "WHEATLEY:CLARO! Areia no pe, sol na cabe\xE7a, sem re\rfrigerante e sem ar condicionado,
-    MEU SONHO MESMO!\r"
-  - ALPHYS:rs . . . rs . . . rs ..
+  - "Wheatley:\nCLARO! Areia no pe, sol na cabe\xE7a, sem re\rfrigerante e sem ar
+    condicionado, MEU SONHO MESMO!\r"
+  - 'Alphys:
+
+    rs . . . rs . . . rs ..'
   scoreText: {fileID: 221175866}
   objetiveNumber: 5
   objectiveText: {fileID: 31417493}
@@ -6861,7 +7307,7 @@ RectTransform:
   - {fileID: 1207586698}
   - {fileID: 221175865}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7050,7 +7496,7 @@ Transform:
   m_LocalScale: {x: 1.141975, y: 1, z: 0.55477}
   m_Children: []
   m_Father: {fileID: 71582380}
-  m_RootOrder: 6
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 75.961006}
 --- !u!65 &1585074866
 BoxCollider:
@@ -7525,7 +7971,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 71582380}
     m_Modifications:
     - target: {fileID: 100144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_Name
@@ -7533,23 +7979,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 166.213
+      value: 157.95
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 47.96
+      value: 10.202728
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 10.769
+      value: 8.3
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7071068
+      value: -0.6757568
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalRotation.z
@@ -7557,11 +8003,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalRotation.w
-      value: -0.7071068
+      value: -0.7371247
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_RootOrder
-      value: 11
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -7569,7 +8015,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 270
+      value: 445.026
       objectReference: {fileID: 0}
     - target: {fileID: 400144, guid: ba04e08f4b4cef049bbe6d0c28ce9432, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
@@ -8034,7 +8480,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 158.09, y: 11.542728, z: -10.9}
   m_LocalScale: {x: 4.3069344, y: 2.51869, z: 8.442591}
-  m_Children: []
+  m_Children:
+  - {fileID: 1391191819}
   m_Father: {fileID: 71582380}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8054,16 +8501,12 @@ MonoBehaviour:
   NPCCharacter: {fileID: 1903179279}
   Name: 
   sentences:
-  - "\xB7 -------Queda do escaravelho --------"
-  - "WHEATLEY:Olha a maldi\xE7\xE3oooo, ao mundo acabando ai \xF3\xF3\xF3oo!!!!"
-  - "\xB7 ALPHYS:Que bobagem ...\r"
-  - 'AKIRA: ...'
-  - Willian:Concordo com a APLHYS, mas nao queremos arriscar
-  - "--------- Coloca o escaravelho no lugar\r ---------"
-  - '-------------WHEATLEY olha para o teto pensativo -----------'
-  - Willian:O que esta pensando ?
-  - "WHEATLEY:No tamanho da r\xE9gua, devia ter uns 6 metros.\r  Mas ainda nao entendi
-    como entraram com\nela aqui"
+  - ' -------Queda do escaravelho --------'
+  - "Wheatley:\nOlha a maldi\xE7\xE3oooo, ao mundo acabando ai \xF3oo!!!!"
+  - "Alphys:\nQue bobagem ...\r"
+  - "Akira:\n ..."
+  - "Willian:\n Concordo com a Alphys, mas n\xE3o queremos arriscar"
+  - '--------- Coloca o escaravelho no lugar ---------'
   scoreText: {fileID: 221175866}
   objetiveNumber: 4
   objectiveText: {fileID: 1914878896}
@@ -9621,7 +10064,7 @@ Transform:
   m_LocalScale: {x: 256.2819, y: 187.58296, z: 256.2819}
   m_Children: []
   m_Father: {fileID: 71582380}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1968436168
 GameObject:
@@ -9893,7 +10336,8 @@ Transform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 91.99065, y: 2.53273, z: 24.298414}
   m_LocalScale: {x: 1.8865, y: 1.3255566, z: 3.5522}
-  m_Children: []
+  m_Children:
+  - {fileID: 130962837}
   m_Father: {fileID: 71582380}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -9913,22 +10357,24 @@ MonoBehaviour:
   NPCCharacter: {fileID: 1989785282}
   Name: 
   sentences:
-  - "Willian: At\xE9 hoje n\xE3o se sabe a hist\xF3ria deste t\xFAmulo"
-  - "WHEATLEY: Quase 5000 anos e nimgu\xE9m aprendeu nada ? Ainda bem que chegamos
-    em!!"
-  - 'AKIRA: Quieto, Wheatley!'
-  - "Willian: O interessante \xE9 que o t\xFAmulo est\xE1 bem no meio entre a face
-    norte e a sul da pir\xE2mide\nUm  dos  nossos  objetivos \xE9 tentar  descobrir
-    \ mais  coisasdaqui!"
-  - "AKIRA: Est\xE1 um cheiro estranho aqui!!"
-  - "ALPHYS: Provavelmente ...\xE9 algum composto qu\xEDmico ... William disse que
-    a medicina deles era desenvolvidas, talvez durante a mumifica\xE7\xE3o eles usassem
-    algo que reagisse como formalde\u0131do para conservar as c\xE9lulas e algo como
-    acetona para desidratar os corpos... alguma mistura com  \xE1gua e sal, provavelmente?"
-  - "AKIRA: Voc\xEA \xE9 a doutora em qu\xEDmica aqui, deve estar certa!"
-  - 'ALPHYS: Talvez . . .  rs . . .  rs . . .  rs ...rs'
-  - William:Exatamente, Al
-  - 'Wheatley : A doutora ataca novamente!'
+  - "Willian:\n At\xE9 hoje n\xE3o se sabe a hist\xF3ria deste t\xFAmulo"
+  - "Wheatley:\n Quase 5000 anos e ningu\xE9m aprendeu nada ? Ainda bem que chegamos,
+    hein!!"
+  - "Akira:\n Quieto, Wheatley!"
+  - "Willian:\n O interessante \xE9 que o t\xFAmulo est\xE1 bem no meio entre a face
+    norte e a sul da pir\xE2mide"
+  - "Willian:\nUm dos nossos objetivos \xE9 tentar descobrir mais coisas daqui!"
+  - "Akira:\n Est\xE1 um cheiro estranho aqui!!"
+  - "Alphys:\n Provavelmente ...\xE9 algum composto qu\xEDmico ... William disse que
+    a medicina deles era desenvolvidas"
+  - "Alphys:\n Talvez durante a mumifica\xE7\xE3o eles usassem algo que reagisse como
+    formalde\xEDdo para conservar as c\xE9lulas e algo como acetona para desidratar
+    os corpos..."
+  - "Alphys:\nAlguma mistura com \xE1gua e sal, provavelmente?"
+  - "Akira:\n Voc\xEA \xE9 a doutora em qu\xEDmica aqui, deve estar certa!"
+  - "Alphys:\n Talvez: rs...  rs...  rs ...rs..."
+  - "Willian:\n Exatamente, Al"
+  - "Wheatley:\n A doutora ataca novamente!"
   scoreText: {fileID: 221175866}
   objetiveNumber: 3
   objectiveText: {fileID: 2065729012}
@@ -10184,7 +10630,6 @@ GameObject:
   - component: {fileID: 2109793156}
   - component: {fileID: 2109793155}
   - component: {fileID: 2109793154}
-  - component: {fileID: 2109793153}
   m_Layer: 0
   m_Name: AkiraColider
   m_TagString: Untagged
@@ -10200,47 +10645,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2109793151}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 146.84, y: 12.6, z: -14.96}
-  m_LocalScale: {x: 2, y: 2, z: 2}
+  m_LocalPosition: {x: -0.38682806, y: 1.1356896, z: 0.07416472}
+  m_LocalScale: {x: 0.97850716, y: 0.97850716, z: 0.97850716}
   m_Children: []
-  m_Father: {fileID: 71582380}
-  m_RootOrder: 9
+  m_Father: {fileID: 5195206}
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2109793153
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2109793151}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c6383628b2c7bd441be0f6c57e4e057a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ChatBackGround: {fileID: 818442580}
-  NPCCharacter: {fileID: 2109793152}
-  Name: 
-  sentences:
-  - "Willian: At\xE9 hoje n\xE3o se sabe a hist\xF3ria deste t\xFAmulo"
-  - "WHEATLEY: Quase 5000 anos e nimgu\xE9m aprendeu nada ? Ainda bem que chegamos
-    em!!"
-  - 'AKIRA: Quieto, Wheatley!'
-  - "Willian: O interessante \xE9 que o t\xFAmulo est\xE1 bem no meio entre a face
-    norte e a sul da pir\xE2mide\nUm  dos  nossos  objetivos \xE9 tentar  descobrir
-    \ mais  coisasdaqui!"
-  - "AKIRA: Est\xE1 um cheiro estranho aqui!!"
-  - "ALPHYS: Provavelmente ...\xE9 algum composto qu\xEDmico ... William disse que
-    a medicina deles era desenvolvidas, talvez durante a mumifica\xE7\xE3o eles usassem
-    algo que reagisse como formalde\u0131do para conservar as c\xE9lulas e algo como
-    acetona para desidratar os corpos... alguma mistura com  \xE1gua e sal, provavelmente?"
-  - "AKIRA: Voc\xEA \xE9 a doutora em qu\xEDmica aqui, deve estar certa!"
-  - 'ALPHYS: Talvez . . .  rs . . .  rs . . .  rs ...rs'
-  - William:Exatamente, Al
-  - 'Wheatley : A doutora ataca novamente!'
-  scoreText: {fileID: 0}
-  objetiveNumber: 0
-  objectiveText: {fileID: 0}
 --- !u!65 &2109793154
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -10252,8 +10662,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 0.991127, y: 2.0635166, z: 1}
+  m_Center: {x: 0.41098404, y: -0.33493137, z: 0}
 --- !u!23 &2109793155
 MeshRenderer:
   m_ObjectHideFlags: 0

@@ -41,7 +41,7 @@ public class NPC : MonoBehaviour {
             dialogueSystem.dialogueLines = sentences;
             FindObjectOfType<DialogueSystem>().NPCName();
             //score
-            if(!booleans[objetiveNumber-1]){
+            if(objetiveNumber!= -1 && !booleans[objetiveNumber-1]){
                 int score;
                 if(objetiveNumber >= 5){
                     score = Convert.ToInt32(scoreText.text);
@@ -53,8 +53,8 @@ public class NPC : MonoBehaviour {
                 }
                 scoreText.text = score.ToString();
                 UpdateObjectivesText(objetiveNumber);
+                booleans[objetiveNumber-1] = true;
             }
-            booleans[objetiveNumber+1] = true;
         }
     }
 

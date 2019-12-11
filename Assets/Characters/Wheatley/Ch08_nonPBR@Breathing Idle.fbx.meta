@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: b036a5314c413c64e81cc42d2356b85d
+guid: 6054245c34849c24b8ef672dcaa35fde
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -159,7 +159,7 @@ ModelImporter:
     4300008: Ch08_Hoodie
     4300010: Ch08_Hair
     4300012: Ch08_Beard
-    7400000: Breathing Idle
+    7400000: mixamo.com
     9500000: //RootNode
     13700000: Ch08_Beard
     13700002: Ch08_Body
@@ -168,72 +168,7 @@ ModelImporter:
     13700008: Ch08_Hoodie
     13700010: Ch08_Pants
     13700012: Ch08_Sneakers
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch08_body
-    second: {fileID: 2100000, guid: 0bc961df46118354284c216de727b9b7, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch08_body1
-    second: {fileID: 2100000, guid: 16f24f6a6e126614eb03104ce9ab9c30, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: Ch08_hair
-    second: {fileID: 2100000, guid: 81cdc397b57a7ee4ab09934d0d830a2b, type: 2}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1001_Diffuse
-    second: {fileID: 2800000, guid: 96db4b80eb7dda0439b7f1aa4dab1d81, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1001_Glossiness
-    second: {fileID: 2800000, guid: dcaccae126a13ae4a8cb363814e5700e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1001_Normal
-    second: {fileID: 2800000, guid: 5d5bcd093ea7c8640a59f2707b0397ff, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1001_Specular
-    second: {fileID: 2800000, guid: 92a2d19ba5585cd4a996c3d1db2365d3, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1002_Diffuse
-    second: {fileID: 2800000, guid: 37a4cd7e0d1f3b94ea883fd9d5eb34e2, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1002_Glossiness
-    second: {fileID: 2800000, guid: e1db507bd97f70f45b0d8abad9f39dbb, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1002_Normal
-    second: {fileID: 2800000, guid: 58850ed75c8379743a3690f2aa599fa0, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1002_Specular
-    second: {fileID: 2800000, guid: dfce6505f9321a245a31b228dfc5025e, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1003_Diffuse
-    second: {fileID: 2800000, guid: 6836d594b99935b409bdb803d39053b9, type: 3}
-  - first:
-      type: UnityEngine:Texture2D
-      assembly: UnityEngine.CoreModule
-      name: Ch08_1003_Normal
-    second: {fileID: 2800000, guid: ba8e928c616f9fb4285663bfac20af8a, type: 3}
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -260,35 +195,7 @@ ModelImporter:
     animationWrapMode: 0
     extraExposedTransformPaths: []
     extraUserProperties: []
-    clipAnimations:
-    - serializedVersion: 16
-      name: Breathing Idle
-      takeName: mixamo.com
-      firstFrame: 0
-      lastFrame: 436
-      wrapMode: 0
-      orientationOffsetY: 0
-      level: 0
-      cycleOffset: 0
-      loop: 0
-      hasAdditiveReferencePose: 0
-      loopTime: 1
-      loopBlend: 0
-      loopBlendOrientation: 0
-      loopBlendPositionY: 0
-      loopBlendPositionXZ: 0
-      keepOriginalOrientation: 0
-      keepOriginalPositionY: 1
-      keepOriginalPositionXZ: 0
-      heightFromFeet: 0
-      mirror: 0
-      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
-      curves: []
-      events: []
-      transformMask: []
-      maskType: 3
-      maskSource: {instanceID: 0}
-      additiveReferencePoseFrame: 0
+    clipAnimations: []
     isReadable: 1
   meshes:
     lODScreenPercentages: []

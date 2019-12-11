@@ -12,15 +12,18 @@ public class NPC : MonoBehaviour {
 
     private DialogueSystem dialogueSystem;
 
-    public string Name;
+    private int score;
+    private bool[] booleans = new bool[7] {false,false,false,false,false,false,false};
 
     [TextArea(5, 10)]
-    public string[] sentences;
+    public string Name;
     // SCORE
     public Text scoreText;
     public int objetiveNumber;
     public Text objectiveText; //Textos dos objetivos
-    private bool[] booleans = new bool[7] {false,false,false,false,false,false,false};
+    public GameObject objBackground;
+    public Text NextLevel;
+    public string[] sentences;
 
     void Start () {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
@@ -42,7 +45,6 @@ public class NPC : MonoBehaviour {
             FindObjectOfType<DialogueSystem>().NPCName();
             //score
             if(objetiveNumber!= -1 && !booleans[objetiveNumber-1]){
-                int score;
                 if(objetiveNumber >= 5){
                     score = Convert.ToInt32(scoreText.text);
                     score += 20;
@@ -55,7 +57,15 @@ public class NPC : MonoBehaviour {
                 UpdateObjectivesText(objetiveNumber);
                 booleans[objetiveNumber-1] = true;
             }
+            if(score >= 100){
+            	NextLevel.text = "\n\n\n\n\n\nVocê Ganhou!\nPressione P para o próximo nível";
+            	objBackground.SetActive(true);
+            }
         }
+        // if(booleans[0] && booleans[1] && booleans[2] && booleans[3] 
+        // 	&& booleans[4] && booleans[5] && booleans[6]){
+        	
+        // }
     }
 
     public void UpdateObjectivesText(int objective){

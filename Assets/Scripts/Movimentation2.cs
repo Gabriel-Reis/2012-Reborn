@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using System;
 
-public class Movimentation : MonoBehaviour {
+public class Movimentation2 : MonoBehaviour {
     Animator anim;
 
     void Start () {
@@ -22,7 +22,12 @@ public class Movimentation : MonoBehaviour {
         }
 
         if(Input.GetKey(KeyCode.P)){
-            SceneManager.LoadScene("Level2");
+            Cursor.lockState=CursorLockMode.None;
+            Cursor.visible = true;
+            SceneManager.LoadScene("Level0");
+        }
+        if(Input.GetKey(KeyCode.U)){
+            Application.Quit();
         }
 
     }

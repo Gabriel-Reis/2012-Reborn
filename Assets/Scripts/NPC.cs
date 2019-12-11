@@ -22,15 +22,12 @@ public class NPC : MonoBehaviour {
     public Text objectiveText; //Textos dos objetivos
     private bool[] booleans = new bool[7] {false,false,false,false,false,false,false};
 
-
     void Start () {
         dialogueSystem = FindObjectOfType<DialogueSystem>();
     }
     
     void Update () {
           Vector3 Pos = Camera.main.WorldToScreenPoint(NPCCharacter.position);
-          Pos.y += 100;
-          ChatBackGround.position = Pos;
     }
 
     public void OnTriggerStay(Collider other)
@@ -83,5 +80,4 @@ public class NPC : MonoBehaviour {
         FindObjectOfType<DialogueSystem>().OutOfRange();
         this.gameObject.GetComponent<NPC>().enabled = false;
     }
-
 }
